@@ -205,12 +205,46 @@
         margin-bottom: 1rem;
     }
     .about{
-        margin :0 10% ;
+        margin :11rem 10% ;
     }
     .about__description{
         background-color: #fff;
         text-align: center;
         border-radius: .4rem;
+        
+    }
+    .downloadCv{
+        text-align: center;
+        margin-top: 2rem;
+        margin-right: 3.5rem;
+    }
+
+    .buttonCv{
+        color: var(--colorBlancotxt);
+        text-decoration: none;
+        padding: .8rem;
+        background-color:var(--rojoPastel);
+        border-radius: .5rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-left: 3rem;
+        
+    }
+    .buttonCv:hover{
+        background-color:#fd473d
+    }
+    .iconardos {
+        display: grid;
+        margin: 4rem 10%;
+        grid-template-columns: repeat(6,1fr);
+        justify-content: center;
+        background-color: var(--colorBlancotxt);
+        padding: 1rem;
+        border-radius: .4rem;
+    }
+    .iconardos img{
+        width: 65px;
+      
         
     }
     .contactame{
