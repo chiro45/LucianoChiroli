@@ -2,14 +2,14 @@
 
 
 let arrIcons = [
-'../iconosSlider/bootstrap.png',
-'../iconosSlider/css-3.png',
-'../iconosSlider/git.png', 
-'../iconosSlider/github.png',
-'../iconosSlider/html5.png',
-'../iconosSlider/icons8-nodejs-480.png',
-'../iconosSlider/js.png',
-'../iconosSlider/react.png',
+'../iconosSlider/bootstrap.PNG',
+'../iconosSlider/css-3.PNG',
+'../iconosSlider/git.PNG', 
+'../iconosSlider/github.PNG',
+'../iconosSlider/html5.PNG',
+'../iconosSlider/icons8-nodejs-480.PNG',
+'../iconosSlider/js.PNG',
+'../iconosSlider/react.PNG',
 ]
 let i = 0
 
