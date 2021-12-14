@@ -2,7 +2,7 @@
 
 
 let arrIcons = [
-'../iconosSlider/bootstrap.png',
+url('../iconosSlider/bootstrap.png'),
 '../iconosSlider/css-3.png',
 '../iconosSlider/git.png', 
 '../iconosSlider/github.png',
