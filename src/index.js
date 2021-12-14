@@ -73,7 +73,7 @@ darkmode.addEventListener('click',(e)=>{
 //cursor Description
 const cursor = document.getElementById('description')
  
- let str = ` "Soy un apasionado de la informática, sen busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida"; `;
+ let str = ` "Soy un apasionado de la informática, en busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida"; `;
 let array = str.split('')
 let cont = 0;
 let inicio = cursor.innerHTML;
@@ -107,4 +107,24 @@ window.addEventListener('scroll',(e)=>{
         cont =0
     }
     
+})
+//cambiar idioma
+const idioma = document.getElementById('idioma');
+idioma.addEventListener('click', ()=>{
+    console.log('click')
+})
+
+//que se muestre el apartado mobile
+const menuHeader = document.getElementById('toggleOpen');
+const list =  document.getElementById('navegationMobile')
+console.log(list)
+menuHeader.addEventListener('click',(e)=>{
+    
+    if(!list.classList.contains("navegationMobile1")){
+        list.classList.add("navegationMobile1")
+        list.classList.remove("menuMobile")
+     }else{
+         list.classList.add("menuMobile")
+         list.classList.remove("navegationMobile1")
+     }
 })
