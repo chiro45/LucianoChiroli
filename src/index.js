@@ -1,14 +1,14 @@
 
 
 let arrIcons = [
-'../iconosSlider/bootstrap.png',
-'../iconosSlider/css-3.png',
-'../iconosSlider/git.png', 
-'../iconosSlider/github.png',
-'../iconosSlider/html5.png',
-'../iconosSlider/icons8-nodejs-480.png',
-'../iconosSlider/js.png',
-'../iconosSlider/react.png',
+'./iconosSlider/bootstrap.png',
+'./iconosSlider/css-3.png',
+'./iconosSlider/git.png', 
+'./iconosSlider/github.png',
+'./iconosSlider/html5.png',
+'./iconosSlider/icons8-nodejs-480.png',
+'./iconosSlider/js.png',
+'./iconosSlider/react.png',
 ]
 let i = 0
 
@@ -29,8 +29,8 @@ function cambiarImagenes(arr){
             }if(i>4){
                 document.slider6.src = arr[i-5];
                 
-                }if(i>3){
-                    document.slider6.src = arr[i];
+                }if(i>5){
+                    document.slider6.src = arr[7];
                     
                     }
     if(i< arrIcons.length-2){
@@ -45,7 +45,7 @@ setInterval(()=>{
     cambiarImagenes(arrIcons)
     
     
-}, 500)
+}, 1000)
 
 
 //darck mode
