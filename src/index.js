@@ -45,7 +45,7 @@ setInterval(()=>{
     cambiarImagenes(arrIcons)
     
     
-}, 500)
+}, 1000)
 
 
 //darck mode
