@@ -680,8 +680,8 @@
         .boody{
             background-color: var(--colorBlancotxt);
             margin:0;
-            margin-left: 3rem;
-            margin-right: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
             margin-top: 1rem;
             width: 100%;
             height: 100%;
@@ -690,8 +690,8 @@
         .bodyDark{
             background-color: var(--bacgroundReOscuro); 
             margin:0;
-            margin-left: 3rem;
-            margin-right: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
             margin-top: 1rem;
             width: 100%;
             height: 100%;
