@@ -92,7 +92,7 @@ const escribir = ()=>{
     },50)
 }
 
-
+//evento de escroll para descripcion
 window.addEventListener('scroll',(e)=>{
     let position = window.scrollY;
     if(position>0 && position < 300){
