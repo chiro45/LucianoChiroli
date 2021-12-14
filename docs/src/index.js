@@ -2,7 +2,7 @@
 
 
 let arrIcons = [
-'https://drive.google.com/file/d/1xs0v0HLB29yRs1OLPMK5c69vHx4LE-oV/view?usp=sharing',
+'../iconosSlider/bootstrap.png',
 '../iconosSlider/css-3.png',
 '../iconosSlider/git.png', 
 '../iconosSlider/github.png',
