@@ -85,8 +85,6 @@ const escribir = ()=>{
         if(conta != array.length){
             escribir()
            
-        }else if(conta === array.length){
-            array.push("|")
         }
         else{
             conta = 0;
@@ -94,7 +92,7 @@ const escribir = ()=>{
         
     },50)
 }
-escribir()
+
 //evento de escroll para descripcion
 window.addEventListener('scroll',(e)=>{
     let position = window.scrollY;
