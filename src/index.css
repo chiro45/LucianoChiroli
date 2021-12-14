@@ -20,8 +20,8 @@
         --bacgroundOscuro:rgb(54, 58, 66);
     }
     body{
-        background-image: url('../iconosSlider/bootstrap.png');
-        /* background-color: #f5f5f5; */
+        
+        background-color: #f5f5f5;
         margin: 10%;
         margin-top: 1rem;
         height: 100%;
