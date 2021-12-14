@@ -114,8 +114,8 @@
         margin-left: 3rem;
     }
     .inicio{
-        margin-top: 13rem;
-        margin-bottom: 13rem;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
     padding: 2rem;
     display: grid;
     grid-template-columns:50px 1.2fr .8fr ;
@@ -189,7 +189,7 @@
     }
 
     .h22{
-        transform: translate(130px,-300px);
+        transform: translate(110px,-300px);
         font-size: 4rem;
         color:var(--bacgroundOscuro);
         text-shadow: 4px 4px var(--rojoPastel);
@@ -470,4 +470,110 @@
             margin-top: .3rem;
             width: 400px;
         }
+    }
+
+
+    @media all  and (max-width: 722px){
+        .boody{
+            background-color: var(--colorBlancotxt);
+            margin:0 ;
+            margin-left: 3rem;
+            margin-right: 2rem;
+            margin-top: 1rem;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .bodyDark{
+            background-color: var(--bacgroundReOscuro); 
+            margin: 0%;
+            margin-left: 3rem;
+            margin-right: 2rem;
+            margin-top: 1rem;
+            width: 100%;
+            height: 100%;
+        }
+        .inicio{
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            grid-template-columns:30px 1fr;
+            
+            }
+        .iconos{
+            
+            font-size: 1.4rem;
+            
+            text-align: center;
+        }
+        .iconos a{
+        margin-right: 3rem;
+            
+        }
+        .title__inicio{
+            font-size: .8rem;
+            
+        }
+        .stitle__inicio{
+            font-size: .6rem;
+        }
+        .description__inicio{
+           width: 330px;
+           font-size: 1rem;
+        }
+        .buttonContact{
+            font-size: .8rem;
+            margin-left: 0;
+        }
+        .downloadCv{
+        
+        padding: .4rem;
+        border-radius: .4rem;
+      
+        }
+        .downloadCv a{
+            font-size: .8rem;
+        }
+        
+        .iconardos img{
+            width: 2.4rem;
+        }
+        .formContact{
+            width: 20rem;
+        }
+        .nombre,.email,.asunto,.textarea{
+            
+            padding: .8rem;
+            border-radius: .4rem;
+            margin-top: .3rem;
+            width: 292px;
+
+        }
+        .asunto{
+            margin-bottom: 1.3rem;
+        }
+        .containerForm{
+            margin: 1.3rem;
+        }
+
+        .footer__title{
+            font-size: 1rem;
+        }
+        .footerStitle{
+            font-size: .8rem;
+        }
+        .footer__links{
+            font-size: .9rem;
+        }
+        .footer__socials{
+            margin: 1rem;
+            font-size: 1.3rem;
+        }
+        .footer__socials a {
+            margin: 1rem;
+            
+        }
+        .footer__final{
+            font-size: .7rem;
+        }
+
     }

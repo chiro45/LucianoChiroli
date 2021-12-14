@@ -72,8 +72,8 @@ darkmode.addEventListener('click',(e)=>{
 })
 //cursor Description
 const cursor = document.getElementById('description')
-
-let str = ` "Soy un apasionado de la informática, en busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida";`;
+ 
+ let str = ` "Soy un apasionado de la informática, sen busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida"; `;
 let array = str.split('')
 let cont = 0;
 let inicio = cursor.innerHTML;
@@ -84,14 +84,17 @@ const escribir = ()=>{
         conta++;    
         if(conta != array.length){
             escribir()
-            
-        }else{
+           
+        }else if(conta === array.length){
+            array.push("|")
+        }
+        else{
             conta = 0;
         }
-       
+        
     },50)
 }
-
+escribir()
 //evento de escroll para descripcion
 window.addEventListener('scroll',(e)=>{
     let position = window.scrollY;
