@@ -117,7 +117,7 @@ idioma.addEventListener('click', ()=>{
 //que se muestre el apartado mobile
 const menuHeader = document.getElementById('toggleOpen');
 const list =  document.getElementById('navegationMobile')
-console.log(list)
+
 menuHeader.addEventListener('click',(e)=>{
     
     if(!list.classList.contains("navegationMobile1")){
@@ -128,3 +128,21 @@ menuHeader.addEventListener('click',(e)=>{
          list.classList.remove("navegationMobile1")
      }
 })
+
+//scrolleo a las diferentes secciones
+const sections = document.querySelectorAll("section[id]");
+
+function scroll(){
+    const scrollY = window.pageYOffset
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop -50;
+        if(scrollY > sectionTop && scrollY <= sectionTop +sectionHeight){
+            document.querySelector(".navegation a [href*=" + sectionsId + "]").classList.add("active-link")
+        }else{
+            document.querySelector(".navegation a [href*=" + sectionsId + "]").classList.remove("active-link")
+
+        }
+    })
+}
+
