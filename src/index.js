@@ -29,8 +29,8 @@ function cambiarImagenes(arr){
             }if(i>4){
                 document.slider6.src = arr[i-5];
                 
-                }if(i>3){
-                    document.slider6.src = arr[i];
+                }if(i>5){
+                    document.slider6.src = arr[7];
                     
                     }
     if(i< arrIcons.length-2){
