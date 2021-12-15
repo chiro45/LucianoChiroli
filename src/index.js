@@ -163,16 +163,29 @@ readMoreT.addEventListener('click',()=>{
 
 })
 
+//leer mas menos cursos
+const div =  document.getElementById('masOmenosCursos'),
+      leerMasMenosCursosD =  document.getElementById('leerMasCursosDiv'),
+      readMoreC = document.getElementById('leerMasCursos'),
+      readMenosC = document.getElementById('leerMenosCursos')
+div.addEventListener('click',()=>{
+    leerMas(leerMasMenosCursosD,readMoreC,readMenosC)
+
+})
 //funcion para desplegar leer mas y leer menos
-const leerMas = (span, leerMas, leerMenos)=>{
-    if(!span.classList.contains("leerMasDescription1")){
-        span.classList.add("leerMasDescription1")
-        span.classList.remove("leerMasDescription")
+const leerMas = (span2, leerMas, leerMenos)=>{
+    if(!span2.classList.contains("leerMasDescription1")){
+        //cambio de clases en vistas
+        span2.classList.add("leerMasDescription1")
+        span2.classList.remove("leerMasDescription")
+        //cambio de clases en boton
         leerMenos.classList.remove("leerMenos")
         leerMas.classList.add("leerMenos")
      }else{
-         span.classList.remove("leerMasDescription1")
-         span.classList.add("leerMasDescription")
+         //cambio de clases en vistas
+         span2.classList.remove("leerMasDescription1")
+         span2.classList.add("leerMasDescription")
+         //cambio de clases en boton
          leerMas.classList.remove("leerMenos")
          leerMenos.classList.add("leerMenos")
      }

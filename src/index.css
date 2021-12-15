@@ -1,4 +1,4 @@
-    .html{
+list__description   .html{
         margin: 0;
         padding: 0;
     }
@@ -231,6 +231,19 @@
     .list__description {
         list-style-type: none;
         text-align: center;
+        
+
+    }
+    /* education */
+    .education a{
+        text-decoration: none;
+        color: var(--colorBlancotxt);
+        padding: .4rem;
+    }
+    .arrowCourses{
+        font-size: 1.3rem;
+        font-weight: .3rem;
+        margin: 0;
     }
     .education {
         background-color: #84b6f4;
@@ -240,6 +253,7 @@
         
         
     }
+    
     /* pruebas read more */
     .leerMasContainer{
         margin: .3rem .2rem;
