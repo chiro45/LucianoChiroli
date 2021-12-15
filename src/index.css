@@ -394,7 +394,7 @@
 }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media  screen and (max-width:360px){
+@media  screen and (max-width:560px){
     
     .contenedorNav{
         align-items: center;
@@ -619,7 +619,7 @@
 
 /* For medium devices */
 
-@media screen and (min-width:410px){
+@media screen and (min-width:560px){
     .contenedorNav{
         align-items: center;
         background-color:var(--bacgroundOscuro);
@@ -792,7 +792,7 @@
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
-        width: 232px;
+        width: 350px;
     }
     
     .textarea{
@@ -844,11 +844,23 @@
 }
 
 @media screen and (min-width:768px){
-    
+    .nombre,.email,.asunto,.textarea{
+        
+        padding: .8rem;
+        border-radius: .4rem;
+        margin-top: .3rem;
+        width: 600px;
+    }
 }
 
 
 /* For large devices */
 @media  screen and (min-width: 1024px){
-    
+    .nombre,.email,.asunto,.textarea{
+        
+        padding: .8rem;
+        border-radius: .4rem;
+        margin-top: .3rem;
+        width: 800px;
+    }
 }
