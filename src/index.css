@@ -397,11 +397,7 @@
 @media  screen and (max-width:560px){
     
     .contenedorNav{
-        align-items: center;
-        background-color:var(--bacgroundOscuro);
-        border-radius: .4rem;
-        font-size: 1.2rem;
-        margin: 0rem 1rem -2rem 1rem;
+        display: none;
     }
     
     .links, .links a b {
@@ -416,7 +412,7 @@
     
     .inicio{
         grid-template-columns: 40px 1fr;
-        margin: 3rem 1rem 0rem 1rem;
+        margin: 1rem 1rem 0rem 1rem;
     }
     .texto{
         margin-top: 2rem;
@@ -621,11 +617,7 @@
 
 @media screen and (min-width:560px){
     .contenedorNav{
-        align-items: center;
-        background-color:var(--bacgroundOscuro);
-        border-radius: .4rem;
-        font-size: 1.2rem;
-        margin: 0rem 1rem -2rem 1rem;
+        display: none;
     }
     
     .links, .links a b {
@@ -640,7 +632,7 @@
     
     .inicio{
         grid-template-columns: 40px 1fr;
-        margin: 3rem 1rem 0rem 1rem;
+        margin: 1rem 1rem 0rem 1rem;
     }
     .texto{
         margin-top: 2rem;
@@ -845,22 +837,120 @@
 
 @media screen and (min-width:768px){
     .nombre,.email,.asunto,.textarea{
-        
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
         width: 600px;
+    }
+    .contenedorNav{
+        align-items: center;
+        border-radius: .4rem;
+        display: flex;
+        font-size: 1.1rem;
+        justify-content: space-around;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .links{
+        display: inline-block;
+        
+    }
+    .iconardos{
+        margin: 6rem 1rem 4rem 1rem ;
+    }
+    .tecnologias{
+       
+        margin: -14rem 1rem 0rem 1rem;
     }
 }
 
 
 /* For large devices */
 @media  screen and (min-width: 1024px){
+    .contenedorNav,
+    .inicio,
+    .about,
+    .tecnologias, 
+    .contactame,
+    .containerFooter{
+        margin: 1rem 5rem; 
+    }
+    .contenedorNav{
+        font-size: 1rem;
+    }
     .nombre,.email,.asunto,.textarea{
-        
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
         width: 800px;
+    }
+    .about{
+        margin-top: -2rem;
+    }
+    .tecnologias{
+        margin-top: -3rem;
+    }
+    .contactame{
+        margin-top: -10rem; 
+    }
+    .nombre,.email,.asunto,.textarea{
+        color: var(--colorBlancotxt);
+        background-color:var(--rojoPastel);
+        padding: .8rem;
+        border-radius: .4rem;
+        margin-top: .3rem;
+        width: 500px;
+    }
+    
+    
+}
+@media  screen and (min-width: 1280px){
+    .contenedorNav,
+    .inicio,
+    .about,
+    .tecnologias, 
+    .contactame,
+    .containerFooter{
+        margin: 1rem 12rem; 
+    }
+    .contenedorNav{
+        font-size: 1rem;
+    }
+    .nombre,.email,.asunto,.textarea{
+        padding: .8rem;
+        border-radius: .4rem;
+        margin-top: .3rem;
+        width: 800px;
+    }
+    .about{
+        margin-top: -2rem;
+    }
+    .tecnologias{
+        margin-top: -3rem;
+    }
+    .contactame{
+        margin-top: -10rem; 
+    }
+    .nombre,.email,.asunto,.textarea{
+        color: var(--colorBlancotxt);
+        background-color:var(--rojoPastel);
+        padding: .8rem;
+        border-radius: .4rem;
+        margin-top: .3rem;
+        width: 700px;
+    }
+    .containerFooter{
+        margin-top: -3rem;
+    }
+    .inicio{
+        border-radius: .4rem;
+        background-color: var(--bacgroundOscuro);
+        display: grid;
+        grid-template-columns:50px 1fr 1fr ;
+    }
+    .blob, .h22{
+        display: block;
+    }
+    .containerImg{
+        margin-top: 0;
     }
 }
