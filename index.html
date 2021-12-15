@@ -18,32 +18,33 @@
    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body class='boody' id="body">
-    <header>
-       
-        
-        <div class="containerTitle">
-            <a class="title" > <b> < </b> Luciano Chiroli <b>  > </b></a>
+    
+<header>
+        <div class="contenedorNav">
+            <div class="containerTitle">
+                <a class="title" > <b> < </b> Luciano Chiroli <b>  > </b></a>
+            </div>
+            <div class="navegation" >
+                <ul class="listN">
+                    <!-- <a href="#" class="links"> <b><</b>Proyectos<b>></b> </a> -->
+                    <a href="#inicio" class="links link1 active-link"> <b><</b>Inicio<b>></b></a>
+                    <a href="#sobreMi" class="links link2 "> <b><</b>Sobre Mí<b>></b> </a>
+                    <a href="#tecnologias" class="links link4"> <b><</b>Tecnologías<b>></b></a>
+                    <a href="#contact" class="links link3"> <b><</b>Contacto<b>></b></a>
+               </ul>
+            </div>
+            <div class="containerNavToggle">
+                <a class="toggle" id="toggleOpen" ><i class="uil uil-bars"></i></a>
+            <div class="navegationMobile" id="navegationMobile" >
+                <ul class=" list__mobile"  >
+                    <li><a href="#inicio" class="links link1 active-link"> <b><</b>Inicio<b>></b></a>           </li>
+                    <li><a href="#sobreMi" class="links link2"> <b><</b>Sobre Mí<b>></b> </a>       </li>
+                    <li><a href="#tecnologias" class="links link4"> <b><</b>Tecnologías<b>></b></a> </li>
+                    <li><a href="#contact" class="links link3"> <b><</b>Contacto<b>></b></a>        </li>          
+               </ul>
+            </div>
         </div>
-        <div class="navegation" >
-            <ul class="listN">
-                <!-- <a href="#" class="links"> <b><</b>Proyectos<b>></b> </a> -->
-                <a href="#inicio" class="links link1 active-link"> <b><</b>Inicio<b>></b></a>
-                <a href="#sobreMi" class="links link2 "> <b><</b>Sobre Mí<b>></b> </a>
-                <a href="#tecnologias" class="links link4"> <b><</b>Tecnologías<b>></b></a>
-                <a href="#contact" class="links link3"> <b><</b>Contacto<b>></b></a>
-           </ul>
         </div>
-        <div class="containerNavToggle">
-            <a class="toggle" id="toggleOpen" ><i class="uil uil-bars"></i></a>
-        <div class="navegationMobile" id="navegationMobile" >
-            <ul class=" list__mobile"  >
-                <li><a href="#inicio" class="links link1 active-link"> <b><</b>Inicio<b>></b></a>           </li>
-                <li><a href="#sobreMi" class="links link2"> <b><</b>Sobre Mí<b>></b> </a>       </li>
-                <li><a href="#tecnologias" class="links link4"> <b><</b>Tecnologías<b>></b></a> </li>
-                <li><a href="#contact" class="links link3"> <b><</b>Contacto<b>></b></a>        </li>          
-           </ul>
-        </div>
-    </div>
 </header>
 <main>
     <section class="inicio" id="inicio">
@@ -82,6 +83,7 @@
 
     </section>
     <section class="about" id="sobreMi">
+        <div class="containerAbout">
         <h1 class="about__title"> <b class="b2"><</b>Sobre Mi<b class="b2">/></b></h1>
         <h2 class="about__description"><b class="b4">"</b>Soy de Mendoza,Argentina. Actualmetne tengo 20 años y
             estoy realizando la Tecnicatura universitaria en programacion,
@@ -92,9 +94,18 @@
                 Descargar CV <b class="b5"><i class="uil uil-download-alt button__icon"></i></b>
                 </a>
         </div>
+        </div>
     </section>
     <section class="tecnologias" id="tecnologias">
-        <h1 class="about__title"> <b class="b2"><</b>Tecnologias<b class="b2">/></b></h1>
+        <div class="tecnodiv">
+            <h1 class="tecno__title "> <b class="b2"><</b>Tecnologias<b class="b2">/></b></h1>
+            <h2 class="tecno__description"><b class="b4">"</b>Poseo conocimientos en creacion y maquetado web,desarrollo de interfaces de usuario,
+            en las tecnologias principales actuales para un desarrollador frontend, tales como HTML5,CSS,
+            Bootstrap,
+            JavaScript, React.js. <br>
+            Tambien poseo conocimientos en el lado del backend con node.js y express, ademas de contar con bases de datos relacionales como sql y no relacionales
+             como mongo 
+              db<b class="b4">"</b></h2>
         <div class="iconardos">
         <img name="slider">
         <img name="slider2">
@@ -102,12 +113,14 @@
         <img name="slider4">
         <img name="slider5">
         <img name="slider6">
+        </div>
 
-        
+        </div>
     </section>
     <section class="contactame" id="contact">
-        <h1 class="about__title"><b class="b2"> <</b> Contáctame<b class="b2">/></b></h1>
         <div class="containerForm">
+        <h1 class="about__title formTitle"><b class="b2"> <</b> Contáctame<b class="b2">/></b></h1>
+
             <form action="https://formsubmit.co/luciano.chiroli45@gmail.com" method="POST" class="formContact" id="formSubmit">
                 <div class="nombre">
                     <label for="nombre">Nombre:</label>
@@ -119,7 +132,7 @@
                 </div>
                 <div class="asunto">
                     <label for="asunto">Asunto:</label>
-                    <input type="text" name="asunto required>
+                    <input type="text" name="asunto required">
                 </div>
                 <div class="textarea">
                     <label for="mensaje">Mensaje:</label>
@@ -138,7 +151,7 @@
     </section>
 </main>
 <footer>
-    <div>
+    <section class="containerFooter">
         <h1 class="footer__title"><b class="b4"><</b>Luciano Chiroli<b class="b4">/></b></h1>
         <span class="b1 footerStitle">Frontend developer</span>
         </div>
@@ -159,8 +172,9 @@
             <a href="https://www.linkedin.com/in/luciano-chiroli" target="linkedin"  rel="noopener noreferrer" class="iconos icono1"><i class="uil uil-linkedin-alt"></i></a>
             <a href="https://github.com/chiro45"  class="iconos icono2"><i class="uil uil-github-alt"></i></a>
         </div>
-    </div>
+    
     <p class="footer__final"><b class="b2 "><</b>Chiro45. All right reserved®<b class="b2">/></b></p>
+    </section>
 </footer>
 <script src="./src/index.js"></script>
 </body>
