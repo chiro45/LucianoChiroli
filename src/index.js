@@ -146,42 +146,34 @@ function scroll(){
     })
 }
 
-//readMore description
-const readMore = document.getElementById('readMore'),
-    spanDescription =  document.getElementById('readMoreSpan'),
-    readMoreD = document.getElementById('readMoreD'),
-    readMoreMasD = document.getElementById('readMenosD')
+//readMore description definimos evento
+const spanDescription =  document.getElementById('readMoreSpan'),
+      readMoreD = document.getElementById('readMoreD'),
+      readMoreMasD = document.getElementById('readMenosD')
 readMore.addEventListener('click',()=>{
-    if(!spanDescription.classList.contains("moreText1")){
-        spanDescription.classList.add("moreText1")
-        spanDescription.classList.remove("moreText")
-        readMoreMasD.classList.remove("leerMenos")
-        readMoreD.classList.add("leerMenos")
-     }else{
-         spanDescription.classList.remove("moreText1")
-         spanDescription.classList.add("moreText")
-         readMoreD.classList.remove("leerMenos")
-         readMoreMasD.classList.add("leerMenos")
-     }
+    leerMas(spanDescription,readMoreD, readMoreMasD)
 
 })
-//tecnologias description
-const readMoreT = document.getElementById('readMoreT'),
-      spanDescriptionT =  document.getElementById('readMoreSpanT'),
+//tecnologias description definimos evento
+const spanDescriptionT =  document.getElementById('readMoreSpanT'),
       readMoreTM = document.getElementById('readMenosT'),
       readMoreMasT = document.getElementById('readMoreMasT')
 readMoreT.addEventListener('click',()=>{
-    console.log('click')
-    if(!spanDescriptionT.classList.contains("leerMasDescription1")){
-        spanDescriptionT.classList.add("leerMasDescription1")
-        spanDescriptionT.classList.remove("leerMasDescription")
-        readMoreTM.classList.remove("leerMenos")
-        readMoreMasT.classList.add("leerMenos")
-     }else{
-         spanDescriptionT.classList.remove("leerMasDescription1")
-         spanDescriptionT.classList.add("leerMasDescription")
-         readMoreMasT.classList.remove("leerMenos")
-         readMoreTM.classList.add("leerMenos")
-     }
+    leerMas(spanDescriptionT,readMoreMasT,readMoreTM )
 
 })
+
+//funcion para desplegar leer mas y leer menos
+const leerMas = (span, leerMas, leerMenos)=>{
+    if(!span.classList.contains("leerMasDescription1")){
+        span.classList.add("leerMasDescription1")
+        span.classList.remove("leerMasDescription")
+        leerMenos.classList.remove("leerMenos")
+        leerMas.classList.add("leerMenos")
+     }else{
+         span.classList.remove("leerMasDescription1")
+         span.classList.add("leerMasDescription")
+         leerMas.classList.remove("leerMenos")
+         leerMenos.classList.add("leerMenos")
+     }
+}
