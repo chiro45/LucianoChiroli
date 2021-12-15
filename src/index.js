@@ -130,17 +130,18 @@ menuHeader.addEventListener('click',(e)=>{
 })
 
 //scrolleo a las diferentes secciones
-const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("section[Id]");
 
 function scroll(){
     const scrollY = window.pageYOffset
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop -50;
+        console.log(sectionHeight, sectionTop)
         if(scrollY > sectionTop && scrollY <= sectionTop +sectionHeight){
-            document.querySelector(".navegation a [href*=" + sectionsId + "]").classList.add("active-link")
+            document.querySelector(".navegation ul a [href*=" + sectionsId + "]").classList.add("active-link")
         }else{
-            document.querySelector(".navegation a [href*=" + sectionsId + "]").classList.remove("active-link")
+            document.querySelector(".navegation ul a [href*=" + sectionsId + "]").classList.remove("active-link")
 
         }
     })
