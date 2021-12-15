@@ -210,6 +210,7 @@
         border-radius: .4rem;
         padding: 2rem;
         margin-bottom: 2rem;
+        
     }
     .about__title{
         text-align: center;
@@ -224,12 +225,49 @@
         border-radius: .4rem;
         margin: 0rem 10rem;
         padding: 2rem;
+       
+       
     }
+    /* pruebas read more */
+    .leerMasContainer{
+        margin: .3rem .2rem;
+        background-color: var(--rojoPastel);
+        border-radius: .3rem;
+        text-align: center;
+        padding: .3rem;
+    }
+    
+    .leerMas{
+        text-decoration: none;
+        padding: .8rem;
+        border-radius: .5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--colorBlancotxt);
+        padding: .4rem;
+        cursor: pointer;
+    }
+    .leerMenosContainer{
+        display: none;
+    }
+    
+    .leerMenos{
+        display: none
+    }
+    .moreText{
+        display: none;
+    }
+    .moreText1{
+        display: block;
+    }
+    
+
+    /* pruebas read more */
     .downloadCv{
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 1rem;
         margin-right: 3.5rem;
-        margin-bottom: 10rem;
+        margin-bottom: 13rem;
     }
 
     .buttonCv{
@@ -285,7 +323,18 @@
         border-radius: .4rem;
         
     }
-    /* formulario */
+    /* readmoreTec */
+    .leerMasDescription{
+        display: none;
+    }
+    .leerMasDescription1{
+        display: block;
+    }
+
+
+
+    /* readmoreTec */
+
     .contactame{
         background-color: var(--bacgroundOscuro); 
         margin: -10rem 14rem 0rem 14rem
@@ -323,7 +372,7 @@
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
-        width: 600px;
+        width: 600px; 
     }
     .containerForm input, textarea{
         background-color:#f87d76; 
@@ -509,13 +558,12 @@
     }
     .iconardos {
         display: grid;
-        margin: 4rem 0rem 4rem 0rem ;
+        margin: 1rem ;
         grid-template-columns: repeat(6,1fr);
         justify-content: center;
-       
-        padding: 1rem;
-        
+        padding: .3rem;
         border-radius: .4rem;
+        margin-bottom: 3rem;
     }
     .iconardos img{
         
@@ -523,7 +571,7 @@
     }
     .tecnologias{
        
-        margin: -14rem 1rem 0rem 1rem;
+        margin: -14rem 1rem 12rem 1rem;
     }
     /* formulario */
     .contactame{
@@ -531,7 +579,7 @@
         margin: -12rem 1rem 3rem 1rem
     }
     .formTitle{ 
-     margin-top: 0rem;
+     margin-top: 2rem;
     }
     .containerForm{
         
@@ -675,29 +723,30 @@
         }
         /* about */
         .about{
-            margin: -14rem 1rem 0rem 1rem;
+            margin: -14rem 1rem 4rem 1rem;
         }
-        .containerAbout{
-            
+        .containerAbout{ 
             border-radius: .4rem;
             padding: 2rem;
             margin-bottom: 2rem;
         }
         .about__title{
             text-align: center;
-            
             font-size: 1.7rem;
             margin-bottom: 1rem;
         }
         
         .about__description{
-           
             text-align: center;
             border-radius: .4rem;
             margin: 0rem 1.4rem 0rem 1.4rem;
             padding: 1.3rem;
             font-size: 1rem;
         }
+        .about__description{
+            display: none;
+        }
+        
         .downloadCv{
             text-align: center;
             margin-top: 2rem;
@@ -705,25 +754,22 @@
             margin-bottom: 10rem;
         }
         .buttonCv{
-           
             text-decoration: none;
             padding: .8rem;
-            
             border-radius: .5rem;
             font-size: 1rem;
             font-weight: 500;
-            margin: 0rem 0rem 0rem 2rem;
-       
+            margin: 0rem 0rem 40rem 2rem;
     }
     
     .tecno__title{
         font-size: 1.7rem;
+        
     }
     .tecno__title{
         font-size: 1.7rem;
     }
-    .tecno__description{
-       
+    .tecno__description{  
         text-align:center;
         margin: 0rem 1rem 0rem 1rem;
         padding: 2rem;
@@ -732,12 +778,10 @@
     }
     .iconardos {
         display: grid;
-        margin: 4rem 0rem 4rem 0rem ;
+        margin: -2rem 3rem ;
         grid-template-columns: repeat(6,1fr);
         justify-content: center;
-       
         padding: 1rem;
-        
         border-radius: .4rem;
     }
     .iconardos img{
@@ -945,12 +989,24 @@
         border-radius: .4rem;
         background-color: var(--bacgroundOscuro);
         display: grid;
-        grid-template-columns:50px 1fr 1fr ;
+        grid-template-columns:50px 1.6fr .4fr ;
+    }
+    .description__inicio{
+    max-width: 800px;
     }
     .blob, .h22{
         display: block;
     }
     .containerImg{
         margin-top: 0;
+       
+    }
+    .contenedorNav,
+    .inicio,
+    .about,
+    .tecnologias, 
+    .contactame,
+    .containerFooter{
+        margin: 1rem 20rem; 
     }
 }

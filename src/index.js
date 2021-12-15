@@ -146,3 +146,42 @@ function scroll(){
     })
 }
 
+//readMore description
+const readMore = document.getElementById('readMore'),
+    spanDescription =  document.getElementById('readMoreSpan'),
+    readMoreD = document.getElementById('readMoreD'),
+    readMoreMasD = document.getElementById('readMenosD')
+readMore.addEventListener('click',()=>{
+    if(!spanDescription.classList.contains("moreText1")){
+        spanDescription.classList.add("moreText1")
+        spanDescription.classList.remove("moreText")
+        readMoreMasD.classList.remove("leerMenos")
+        readMoreD.classList.add("leerMenos")
+     }else{
+         spanDescription.classList.remove("moreText1")
+         spanDescription.classList.add("moreText")
+         readMoreD.classList.remove("leerMenos")
+         readMoreMasD.classList.add("leerMenos")
+     }
+
+})
+//tecnologias description
+const readMoreT = document.getElementById('readMoreT'),
+      spanDescriptionT =  document.getElementById('readMoreSpanT'),
+      readMoreTM = document.getElementById('readMenosT'),
+      readMoreMasT = document.getElementById('readMoreMasT')
+readMoreT.addEventListener('click',()=>{
+    console.log('click')
+    if(!spanDescriptionT.classList.contains("leerMasDescription1")){
+        spanDescriptionT.classList.add("leerMasDescription1")
+        spanDescriptionT.classList.remove("leerMasDescription")
+        readMoreTM.classList.remove("leerMenos")
+        readMoreMasT.classList.add("leerMenos")
+     }else{
+         spanDescriptionT.classList.remove("leerMasDescription1")
+         spanDescriptionT.classList.add("leerMasDescription")
+         readMoreMasT.classList.remove("leerMenos")
+         readMoreTM.classList.add("leerMenos")
+     }
+
+})
