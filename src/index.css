@@ -228,6 +228,18 @@
        
        
     }
+    .list__description {
+        list-style-type: none;
+        text-align: center;
+    }
+    .education {
+        background-color: #84b6f4;
+        margin: .3rem;
+        border-radius: .4rem;
+        color: var(--colorBlancotxt);
+        
+        
+    }
     /* pruebas read more */
     .leerMasContainer{
         margin: .3rem .2rem;
@@ -547,6 +559,7 @@
     .lista{
         margin-bottom: 10rem;
     }
+    
     .tecno__title{
         font-size: 1.7rem;
     }
