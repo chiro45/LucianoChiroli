@@ -544,7 +544,9 @@
             margin: 0rem 0rem 0rem 2rem;
        
     }
-    
+    .lista{
+        margin-bottom: 10rem;
+    }
     .tecno__title{
         font-size: 1.7rem;
     }
@@ -658,6 +660,9 @@
     }
    .footer__final{
        font-size: .7rem;}
+       .description__inicio{
+        min-height: 300px;
+    }
 }
 
 
@@ -743,9 +748,7 @@
             padding: 1.3rem;
             font-size: 1rem;
         }
-        .about__description{
-            display: none;
-        }
+        
         
         .downloadCv{
             text-align: center;
@@ -761,7 +764,21 @@
             font-weight: 500;
             margin: 0rem 0rem 40rem 2rem;
     }
-    
+    .lista{
+        margin-bottom: 10rem;
+    }
+    .list__description {
+        list-style-type: none;
+        text-align: center;
+    }
+    .education {
+        background-color: #84b6f4;
+        margin: .3rem;
+        border-radius: .4rem;
+        color: var(--colorBlancotxt);
+        
+        
+    }
     .tecno__title{
         font-size: 1.7rem;
         
@@ -790,12 +807,12 @@
     }
     .tecnologias{
        
-        margin: -14rem 1rem 0rem 1rem;
+        margin: -14rem 1rem 14rem 1rem;
     }
     /* formulario */
     .contactame{
         
-        margin: -12rem 1rem 3rem 1rem
+        margin: -14.1rem 1rem 3rem 1rem
     }
     .formTitle{ 
      margin-top: 0rem;
@@ -876,7 +893,12 @@
         margin-left: -.4rem;
     }
    .footer__final{
-       font-size: .7rem;}
+       font-size: .7rem;
+    }
+    .description__inicio{
+        min-height: 140px;
+    }
+       
 }
 
 @media screen and (min-width:768px){
@@ -884,7 +906,7 @@
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
-        width: 600px;
+        width: 432px;
     }
     .contenedorNav{
         align-items: center;
@@ -905,8 +927,44 @@
        
         margin: -14rem 1rem 0rem 1rem;
     }
-}
-
+    .contenedorNav,
+    .inicio,
+    .about,
+    .tecnologias, 
+    .contactame,
+    .containerFooter{
+        margin: 1rem 3rem;
+       
+    }
+    .about{
+        margin-top: -9rem;
+    }
+    .tecnologias{
+        margin-top: -6rem;
+    }
+    .contactame{
+        margin-top: -10.1rem;
+    }
+    .containerFooter{
+        margin-top: -2rem;
+    }
+    .about__description,
+    .tecno__description{
+        width: 400px;
+        margin: auto;
+        
+    }
+    .iconardos{
+        width: 500px;
+        margin: auto;
+    }
+    .about__title{
+        margin-top: 2rem;
+    }
+    .description__inicio{
+        min-height: 150px;
+    }
+}   
 
 /* For large devices */
 @media  screen and (min-width: 1024px){
@@ -916,7 +974,8 @@
     .tecnologias, 
     .contactame,
     .containerFooter{
-        margin: 1rem 5rem; 
+        margin: 2rem 5rem; 
+       
     }
     .contenedorNav{
         font-size: 1rem;
@@ -928,7 +987,7 @@
         width: 800px;
     }
     .about{
-        margin-top: -2rem;
+        margin-top: -8rem;
     }
     .tecnologias{
         margin-top: -3rem;
@@ -937,12 +996,13 @@
         margin-top: -10rem; 
     }
     .nombre,.email,.asunto,.textarea{
-        color: var(--colorBlancotxt);
-        background-color:var(--rojoPastel);
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
         width: 500px;
+    }
+    .description__inicio{
+        min-height: 200px;
     }
     
     
@@ -954,59 +1014,41 @@
     .tecnologias, 
     .contactame,
     .containerFooter{
-        margin: 1rem 12rem; 
-    }
-    .contenedorNav{
-        font-size: 1rem;
-    }
-    .nombre,.email,.asunto,.textarea{
-        padding: .8rem;
-        border-radius: .4rem;
-        margin-top: .3rem;
-        width: 800px;
-    }
-    .about{
-        margin-top: -2rem;
-    }
-    .tecnologias{
-        margin-top: -3rem;
-    }
-    .contactame{
-        margin-top: -10rem; 
-    }
-    .nombre,.email,.asunto,.textarea{
-        color: var(--colorBlancotxt);
-        background-color:var(--rojoPastel);
-        padding: .8rem;
-        border-radius: .4rem;
-        margin-top: .3rem;
-        width: 700px;
-    }
-    .containerFooter{
-        margin-top: -3rem;
-    }
-    .inicio{
-        border-radius: .4rem;
-        background-color: var(--bacgroundOscuro);
-        display: grid;
-        grid-template-columns:50px 1.6fr .4fr ;
-    }
-    .description__inicio{
-    max-width: 800px;
-    }
-    .blob, .h22{
-        display: block;
-    }
-    .containerImg{
-        margin-top: 0;
+        margin: 1rem 8rem; 
        
     }
-    .contenedorNav,
-    .inicio,
-    .about,
-    .tecnologias, 
-    .contactame,
+    .description__inicio{
+        min-height: 200px;
+    }
+    .about{
+        margin-top: -6rem;
+    }
+    .tecnologias{
+        margin-top: -6rem;
+    }
+    .contactame{
+        margin-top: -10.1rem;
+    }
     .containerFooter{
-        margin: 1rem 20rem; 
+        margin-top: -2rem;
+    }
+    .about__description,
+    .tecno__description{
+        width: 600px;
+        margin: auto;
+        
+    }
+    .iconardos{
+        width: 700px;
+        margin: auto;
+    }
+    .about__title{
+        margin-top: 2rem;
+    }
+    .nombre,.email,.asunto,.textarea{
+        padding: .8rem;
+        border-radius: .4rem;
+        margin-top: .3rem;
+        width: 600px;
     }
 }
