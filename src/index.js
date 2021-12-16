@@ -193,17 +193,19 @@ const englishToggle = document.getElementById('idioma')
 englishToggle.addEventListener('click', (e)=>{
         if(!englishToggle.classList.contains("active")){
             englishToggle.classList.add("active");
+            //nav
             cambiaIdioma('nav-inicio','<b><</b>Home<b>></b>') 
             cambiaIdioma('nav-sobremi','<b><</b>About Me<b>></b>') 
             cambiaIdioma('nav-tecnologias','<b><</b>Tecnologies<b>></b>') 
             cambiaIdioma('nav-contacto','<b><</b>Contact<b>></b>') 
+            cambiaIdioma("title_descript","<b class='b3'><</b>Hi, I'm Luciano Chiroli <b class='b3'>/></b>")
+
         }else{
     englishToggle.classList.remove("active");
         cambiaIdioma('nav-inicio','<b><</b>Inicio<b>></b>')
         cambiaIdioma('nav-sobremi','<b><</b>Sobre Mi<b>></b>') 
         cambiaIdioma('nav-tecnologias','<b><</b>Tecnologias<b>></b>') 
         cambiaIdioma('nav-contacto','<b><</b>Contacto<b>></b>') 
-
 
         }
 
