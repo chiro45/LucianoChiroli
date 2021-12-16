@@ -206,6 +206,7 @@ englishToggle.addEventListener('click', (e)=>{
         cambiaIdioma('nav-sobremi','<b><</b>Sobre Mi<b>></b>') 
         cambiaIdioma('nav-tecnologias','<b><</b>Tecnologias<b>></b>') 
         cambiaIdioma('nav-contacto','<b><</b>Contacto<b>></b>') 
+        cambiaIdioma("title_descript","<b class='b3'><</b>Hola, soy Luciano Chiroli<b class='b3'>/></b>")
 
         }
 
