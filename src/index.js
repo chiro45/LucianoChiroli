@@ -108,11 +108,6 @@ window.addEventListener('scroll',(e)=>{
     }
     
 })
-//cambiar idioma
-const idioma = document.getElementById('idioma');
-idioma.addEventListener('click', ()=>{
-    console.log('click')
-})
 
 //que se muestre el apartado mobile
 const menuHeader = document.getElementById('toggleOpen');
@@ -191,3 +186,43 @@ const leerMas = (span2, leerMas, leerMenos)=>{
          leerMenos.classList.add("leerMenos")
      }
 }
+
+
+//translate to english
+const englishToggle = document.getElementById('idioma')
+englishToggle.addEventListener('click', (e)=>{
+        if(!englishToggle.classList.contains("active")){
+            englishToggle.classList.add("active");
+            cambiaIdioma('nav-inicio','<b><</b>Home<b>></b>') 
+            cambiaIdioma('nav-sobremi','<b><</b>About Me<b>></b>') 
+            cambiaIdioma('nav-tecnologias','<b><</b>Tecnologies<b>></b>') 
+            cambiaIdioma('nav-contacto','<b><</b>Contact<b>></b>') 
+        }else{
+    englishToggle.classList.remove("active");
+        cambiaIdioma('nav-inicio','<b><</b>Inicio<b>></b>')
+        cambiaIdioma('nav-sobremi','<b><</b>Sobre Mi<b>></b>') 
+        cambiaIdioma('nav-tecnologias','<b><</b>Tecnologias<b>></b>') 
+        cambiaIdioma('nav-contacto','<b><</b>Contacto<b>></b>') 
+
+
+        }
+
+})
+
+function cambiaIdioma (id, cadena = ""){
+    let nombre = document.getElementById(id);
+    stateNombre = nombre.innerHTML;
+    
+    if(cadena.length > 2){
+        return nombre.innerHTML = cadena;
+    }else{
+        return stateNombre;
+    }
+
+
+}
+
+
+
+// navInicio.innerHTML = `<h1 class="title__inicio" id="title_descript"> <b class="b3"><</b>Hi, I'm Luciano Chiroli<b class="b3">/></b></h1>`
+
