@@ -328,7 +328,7 @@
     }
     .tecnologias{
         background-color: var(--bacgroundOscuro);
-        margin: -10.4rem 14rem 10rem 14rem;
+        margin: -10.4rem 14rem 9rem 14rem;
     }
     .tecnodiv{
         background-color: var(--bacgroundOscuro);
@@ -470,7 +470,6 @@
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media  screen and (max-width:560px){
-    
     .contenedorNav{
         display: none;
     }
@@ -546,11 +545,10 @@
         }
         
         .about__description{
-           
-            text-align: center;
+            text-align:center ;
             border-radius: .4rem;
-            margin: 0rem 1.4rem 0rem 1.4rem;
-            padding: 1.3rem;
+            margin: 0rem 1rem 0rem 1rem;
+            padding: .2rem;
             font-size: 1rem;
         }
         .downloadCv{
@@ -563,11 +561,11 @@
            
             text-decoration: none;
             padding: .8rem;
-            
+
             border-radius: .5rem;
-            font-size: 1rem;
+            font-size: .8rem;
             font-weight: 500;
-            margin: 0rem 0rem 0rem 2rem;
+            margin: auto;
        
     }
     .lista{
@@ -923,6 +921,7 @@
     }
    .footer__final{
        font-size: .7rem;
+       margin-bottom: 1rem;
     }
     .description__inicio{
         min-height: 140px;
