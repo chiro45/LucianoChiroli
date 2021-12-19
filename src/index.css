@@ -28,12 +28,14 @@
         margin: 0rem;
         padding: 0rem;
     }
+    
     .bodyDark{
         background-color: var(--bacgroundReOscuro); 
         height: 100%;
         margin:0;
         padding: 0rem;
-    }
+    
+}
     /* HEADER AND NAV*/
     .contenedorNav{
         align-items: center;
@@ -239,6 +241,7 @@
         text-decoration: none;
         color: var(--colorBlancotxt);
         padding: .4rem;
+        
     }
     .arrowCourses{
         font-size: 1.3rem;
@@ -250,7 +253,7 @@
         margin: .3rem;
         border-radius: .4rem;
         color: var(--colorBlancotxt);
-        
+        box-shadow: 3px 2px 2px rgb(0, 0, 0, 0.5);
         
     }
     
@@ -437,7 +440,6 @@
         
     }
     .footer__links{
-        
         display: flex;
         flex-direction: row;
         justify-items: center;
@@ -1002,35 +1004,85 @@
     .tecnologias, 
     .contactame,
     .containerFooter{
-        margin: 2rem 5rem; 
+        margin: 1rem 4rem 0rem 4rem; 
        
     }
     .contenedorNav{
-        font-size: 1rem;
+        font-size: 1.3rem;
+        padding: .7rem;
+    }
+
+    .about{
+    margin-top: -8rem;
+    
+    }
+    
+    .inicio{
+        border-radius: .4rem;
+        background-color: var(--bacgroundOscuro);
+        display: grid;
+        grid-template-columns:50px 1.7fr .3fr ;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 2rem;
+    }
+    .blob, .h22{
+        display: block;
+        width: 300px; 
+        margin-left: 2rem; 
+    }
+    .h22{
+        transform: translate(70px, -250px);
+    }
+    .containerInicio{
+        margin-top: 10rem;
+        min-width: none;
+    }
+    .containerImg{
+        margin-top: 10rem;
+       
+    }
+    .iconos{
+        font-size: 2rem;
+        margin: auto;
+    }
+    
+    .about__description,
+    .tecno__description{
+        width: 600px;
+        font-size: 1.4rem;
+    }
+    .containerInicio{
+        margin-bottom: 10rem;
+    }
+    .tecnologias{
+        margin-top: -3rem;  
+        
+    }
+    .contactame{
+        margin-top: -10.3rem; 
     }
     .nombre,.email,.asunto,.textarea{
+        font-size: 1.4rem;
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
         width: 800px;
     }
-    .about{
-        margin-top: -8rem;
+    .formContact input{
+        font-size: 1.6rem;
     }
-    .tecnologias{
-        margin-top: -3rem;
+    .buttonSubmit{
+        font-size: 1.3rem;
     }
-    .contactame{
-        margin-top: -10rem; 
+    .title{
+    width: 270px;
     }
-    .nombre,.email,.asunto,.textarea{
-        padding: .8rem;
-        border-radius: .4rem;
-        margin-top: .3rem;
-        width: 500px;
+    .iconardos{
+        width: 800px;
     }
-    .description__inicio{
-        min-height: 200px;
+    .iconardos img{
+        width: 90px;
     }
     
     
@@ -1042,17 +1094,19 @@
     .tecnologias, 
     .contactame,
     .containerFooter{
-        margin: 1rem 8rem; 
+        margin: 1rem 14rem; 
        
     }
     .description__inicio{
-        min-height: 200px;
+
+        min-height: 270px;
+        
     }
     .about{
         margin-top: -6rem;
     }
     .tecnologias{
-        margin-top: -6rem;
+        margin-top: -0rem;
     }
     .contactame{
         margin-top: -10.1rem;
