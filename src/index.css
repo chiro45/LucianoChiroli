@@ -252,7 +252,7 @@
         margin: 0;
     }
     .education {
-        background-color: var(--rojoPastel);
+        background-color: #db6e6e;
         margin: .3rem;
         border-radius: .4rem;
         color: var(--colorBlancotxt);
@@ -398,7 +398,7 @@
     }
     .nombre,.email,.asunto,.textarea{
         color: var(--colorBlancotxt);
-        background-color:var(--rojoPastel);
+        background-color:#db6e6e;
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
@@ -466,6 +466,7 @@
         background-color:#5a637580 ;
         color:var(--colorBlancotxt) ;
     }
+    
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar{
     width: .9rem;
@@ -811,7 +812,7 @@
         text-align: center;
     }
     .education {
-        background-color: var(--rojoPastel);
+       
         margin: .3rem;
         border-radius: .4rem;
         color: var(--colorBlancotxt);
@@ -1104,6 +1105,9 @@
     .leerMasContainer{
         display: none;
     }
+    .leerMasDescription{
+        display: inline;
+    }
     
 }
 @media  screen and (min-width: 1280px){
@@ -1196,6 +1200,6 @@
     .containerFooter{
         padding: .5rem;
     }
-
+    
     
 }
