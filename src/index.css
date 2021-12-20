@@ -281,7 +281,7 @@
     }
     
     .leerMenos{
-        display: none
+        display: none;
     }
     .moreText{
         display: none;
@@ -360,9 +360,7 @@
         display: block;
     }
 
-
-
-    /* readmoreTec */
+    
 
     .contactame{
         background-color: var(--bacgroundOscuro); 
@@ -454,6 +452,12 @@
     }
     .footer__link:hover{
         color: var(--colorBlancotxt);
+    }
+    .cursolink a:hover{
+        color: var(--bacgroundReOscuro);
+    }
+    .leerMasContainer:hover{
+        background-color:#fd473d;
     }
 
 /*========== SCROLL BAR ==========*/
@@ -1087,6 +1091,13 @@
     .containerFooter{
         padding: .5rem;
     }
+     /* readmoreTec */
+     .leerMasDescription{
+        display: block;
+    }
+    .leerMasContainer{
+        display: none;
+    }
     
 }
 @media  screen and (min-width: 1280px){
@@ -1178,5 +1189,6 @@
     .containerFooter{
         padding: .5rem;
     }
+
     
 }

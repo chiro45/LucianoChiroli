@@ -179,7 +179,7 @@ englishToggle.addEventListener('click', (e)=>{
             cambiaIdioma("sobreMiTitle",`<b class="b2"><</b>About Me<b class="b2">/></b>`)
             //description
             cambiaIdioma("aboutDescription",`I am from Mendoza, Argentina. I am currently 20 years old and I am doing a university degree in programming,`)
-            cambiaIdioma("readMoreSpan",`at the UTN Regional College Mendoza. I am a self-taught person, 
+            cambiaIdioma("readMoreSpan",`at the UTN(Universidad Tecnologica Nacional) Regional College Mendoza. I am a self-taught person, 
             persevering and looking for projects that help me grow professionally<b class="b4">"</b>`)
             cambiaIdioma("readMoreD",`Read More <i class="uil uil-arrow-down"></i>` )
             cambiaIdioma("readMenosD",`Read Less <i class="uil uil-arrow-up"></i>` )
