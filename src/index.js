@@ -49,9 +49,14 @@ setInterval(()=>{
 
 
 //darck mode
-const darkmode= document.getElementById('theme-button') ;
+const darkmode= document.getElementById('theme-button'),
+      descripDark = document.getElementById('containerAbout'),
+      educationDark = document.getElementById('education'),
+      coursesDark = document.getElementById('darkCourses'),
+      tecnologies = document.getElementById('tecnoDark'),
+      contactme = document.getElementById('formSubmit'),
 
-const body = document.getElementById('body');
+      body = document.getElementById('body')
 
 darkmode.addEventListener('click',(e)=>{
  
@@ -60,11 +65,23 @@ darkmode.addEventListener('click',(e)=>{
         body.classList.remove('boody');
         darkmode.classList.remove('uil-moon')
         darkmode.classList.add('uil-sun')
+        descripDark.classList.add('backgroundDarkItems')
+        educationDark.classList.add('backgroundDarkItems')
+        coursesDark.classList.add('backgroundDarkItems')
+        tecnologies.classList.add('backgroundDarkItems')
+        contactme.classList.add('backgroundDarkItems')
+        
+
     }else{
         body.classList.add('boody');
         body.classList.remove('bodyDark');
         darkmode.classList.remove('uil-sun')
         darkmode.classList.add('uil-moon')
+        descripDark.classList.remove('backgroundDarkItems')
+        educationDark.classList.remove('backgroundDarkItems')
+        coursesDark.classList.remove('backgroundDarkItems')
+        tecnologies.classList.remove('backgroundDarkItems')
+        contactme.classList.remove('backgroundDarkItems')
     }
     
     

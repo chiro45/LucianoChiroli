@@ -35,7 +35,10 @@
         margin:0;
         padding: 0rem;
     
-}
+
+    }
+    /* darkmode */
+    
     /* HEADER AND NAV*/
     .contenedorNav{
         align-items: center;
@@ -135,7 +138,7 @@
         color: #84b6f4;
     }
     .icono1:hover{
-        color: var(--colorBlancotxt);
+        color: var(--azulPastel);
     }
     .icono2:hover{
     color: var(--verdeFuerte);
@@ -249,7 +252,7 @@
         margin: 0;
     }
     .education {
-        background-color: #84b6f4;
+        background-color: var(--rojoPastel);
         margin: .3rem;
         border-radius: .4rem;
         color: var(--colorBlancotxt);
@@ -459,7 +462,10 @@
     .leerMasContainer:hover{
         background-color:#fd473d;
     }
-
+    .backgroundDarkItems{
+        background-color:#5a637580 ;
+        color:var(--colorBlancotxt) ;
+    }
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar{
     width: .9rem;
@@ -805,7 +811,7 @@
         text-align: center;
     }
     .education {
-        background-color: #84b6f4;
+        background-color: var(--rojoPastel);
         margin: .3rem;
         border-radius: .4rem;
         color: var(--colorBlancotxt);
@@ -1125,7 +1131,7 @@
         border-radius: .4rem;
         background-color: var(--bacgroundOscuro);
         display: grid;
-        grid-template-columns:50px 1.8fr .3fr ;
+        grid-template-columns:50px 1.7fr .3fr ;
         gap: 1.3rem;
         margin-top: 1rem;
         padding: 4rem;
@@ -1165,7 +1171,8 @@
     }
     .nombre,.email,.asunto,.textarea{
         font-size: 1.4rem;
-        padding: .8rem;
+        padding: 1rem;
+        margin: 1rem;
         border-radius: .4rem;
         margin-top: .3rem;
         width: 800px;
