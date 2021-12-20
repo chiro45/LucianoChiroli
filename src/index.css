@@ -1125,14 +1125,14 @@
         border-radius: .4rem;
         background-color: var(--bacgroundOscuro);
         display: grid;
-        grid-template-columns:50px 1.5fr .5fr ;
+        grid-template-columns:50px 1.8fr .3fr ;
         gap: 1.3rem;
         margin-top: 1rem;
         padding: 4rem;
     }
     .blob, .h22{
         width: 310px; 
-        margin-left: 0rem; 
+        margin-right: 0rem; 
     }
     .about__description,
     .tecno__description{
@@ -1141,7 +1141,7 @@
     }
     .containerInicio{
         margin-top: 10rem;
-        min-width: none;
+        min-width: 400px;
     }
     .containerImg{
         margin-top: 10rem;
