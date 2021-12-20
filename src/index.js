@@ -71,20 +71,22 @@ darkmode.addEventListener('click',(e)=>{
     
 })
 //cursor Description
+let str = ` "Soy un apasionado de la informática, en busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida"; `;
+let str2 = ` "I am passionate about computing, looking for new experiences, challenges that help me gain knowledge and practices to incorporate day by day into my life"; `;
 const cursor = document.getElementById('description')
- 
- let str = ` "Soy un apasionado de la informática, en busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida"; `;
 let array = str.split('')
+let array2 = str2.split('')
 let cont = 0;
 let inicio = cursor.innerHTML;
 let conta = 0;
-const escribir = ()=>{
+const escribir = (arr)=>{
     setTimeout(()=>{
-        cursor.innerHTML += array[conta];
+        cursor.innerHTML += arr[conta];
         conta++;    
-        if(conta != array.length){
-            escribir()
+        if(conta != arr.length){
            
+         escribir(arr)
+            
         }
         else{
             conta = 0;
@@ -94,20 +96,7 @@ const escribir = ()=>{
 }
 
 //evento de escroll para descripcion
-window.addEventListener('scroll',(e)=>{
-    let position = window.scrollY;
-    if(position>0 && position < 300){
-        if(cont < 1){ 
-           escribir();
-            cont++ 
-        }  
-    }
-    if(position > 1000){
-        cursor.innerHTML = inicio;
-        cont =0
-    }
-    
-})
+setTimeout(()=>{escribir(array)},2000)
 
 //que se muestre el apartado mobile
 const menuHeader = document.getElementById('toggleOpen');
@@ -124,23 +113,7 @@ menuHeader.addEventListener('click',(e)=>{
      }
 })
 
-//scrolleo a las diferentes secciones
-const sections = document.querySelectorAll("section[Id]");
 
-function scroll(){
-    const scrollY = window.pageYOffset
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop -50;
-        console.log(sectionHeight, sectionTop)
-        if(scrollY > sectionTop && scrollY <= sectionTop +sectionHeight){
-            document.querySelector(".navegation ul a [href*=" + sectionsId + "]").classList.add("active-link")
-        }else{
-            document.querySelector(".navegation ul a [href*=" + sectionsId + "]").classList.remove("active-link")
-
-        }
-    })
-}
 
 //readMore description definimos evento
 const spanDescription =  document.getElementById('readMoreSpan'),
@@ -193,39 +166,37 @@ const englishToggle = document.getElementById('idioma')
 englishToggle.addEventListener('click', (e)=>{
         if(!englishToggle.classList.contains("active")){
             englishToggle.classList.add("active");
+            escribir(array2)
             //nav
             cambiaIdioma('nav-inicio','<b><</b>Home<b>></b>') 
             cambiaIdioma('nav-sobremi','<b><</b>About Me<b>></b>') 
             cambiaIdioma('nav-tecnologias','<b><</b>Tecnologies<b>></b>') 
             cambiaIdioma('nav-contacto','<b><</b>Contact<b>></b>') 
-            cambiaIdioma("title_descript","<b class='b3'><</b>Hi, I'm Luciano Chiroli <b class='b3'>/></b>")
-
+            cambiaIdioma("title_descript","<b class='b3'><</b>Hi,I'm Luciano Chiroli<b class='b3'>/></b>")
+            cambiaIdioma("contactame","Contact Me <b class='b5'><i class='uil uil-message button__icon'></i></b>")
+            cambiaIdioma("sTitle",`<b class='b1'>class =</b> "Frontend Developer";`);
+            cambiaIdioma("description","<b class='b3'>let</b> <b class='b2'>description</b> = ")
+            
+           
         }else{
-    englishToggle.classList.remove("active");
+        englishToggle.classList.remove("active");
+        escribir(array)
+        //nav
         cambiaIdioma('nav-inicio','<b><</b>Inicio<b>></b>')
         cambiaIdioma('nav-sobremi','<b><</b>Sobre Mi<b>></b>') 
         cambiaIdioma('nav-tecnologias','<b><</b>Tecnologias<b>></b>') 
         cambiaIdioma('nav-contacto','<b><</b>Contacto<b>></b>') 
         cambiaIdioma("title_descript","<b class='b3'><</b>Hola, soy Luciano Chiroli<b class='b3'>/></b>")
-
-        }
-
+        cambiaIdioma("contactame","Contáctame <b class='b5'><i class='uil uil-message button__icon'></i></b>")
+        cambiaIdioma("sTitle",`<b class='b1'>class =</b> "Desarrollador Front End";`);
+        cambiaIdioma("description","<b class='b3'>let</b> <b class='b2'>descripción</b> = ")
+       
+    }
 })
+
 
 function cambiaIdioma (id, cadena = ""){
     let nombre = document.getElementById(id);
-    stateNombre = nombre.innerHTML;
+    if(cadena.length > 2) return nombre.innerHTML = cadena;
     
-    if(cadena.length > 2){
-        return nombre.innerHTML = cadena;
-    }else{
-        return stateNombre;
-    }
-
-
 }
-
-
-
-// navInicio.innerHTML = `<h1 class="title__inicio" id="title_descript"> <b class="b3"><</b>Hi, I'm Luciano Chiroli<b class="b3">/></b></h1>`
-
