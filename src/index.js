@@ -212,7 +212,7 @@ englishToggle.addEventListener('click', (e)=>{
             cambiaIdioma("leerMenosCursos",`Read Less <i class="uil uil-arrow-up"></i>` )
             cambiaIdioma("tecnoTitle",`<b class="b2"><</b>Tecnologies<b class="b2">/></b>` )
             cambiaIdioma("descriptTec",`I have knowledge in web layout, user interface development, in current technologies for a frontend developer, such as HTML5, CSS, Bootstrap,`)
-            cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs. <br>I also have knowledge on the backend side with node.js and express, in addition to having knowledge of relational databases such as SQL and non-relational databases such as Mongo DB<b class="b4">"</b>`)
+            cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs. <br>I also have knowledge of the backend side with node.js and express, in addition to having knowledge of relational databases such as SQL and non-relational databases such as Mongo DB<b class="b4">"</b>`)
             cambiaIdioma("readMoreMasT",`Read More <i class="uil uil-arrow-down"></i>`)
             cambiaIdioma("readMenosT",`Read Less <i class="uil uil-arrow-up"></i>`)
             //contactme
