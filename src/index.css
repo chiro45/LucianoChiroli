@@ -1078,7 +1078,7 @@
         padding: .8rem;
         border-radius: .4rem;
         margin-top: .3rem;
-        width: 800px;
+        width: 700px;
     }
     .formContact input{
         font-size: 1.6rem;
@@ -1098,7 +1098,7 @@
     .containerFooter{
         padding: .5rem;
     }
-     /* readmoreTec */
+     /* sacamos los read more para que en pantallas grandes podamos observar mejor */
      .leerMasDescription{
         display: block;
     }

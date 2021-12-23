@@ -88,8 +88,8 @@ darkmode.addEventListener('click',(e)=>{
     
 })
 //cursor Description
-let str = ` "Soy un apasionado de la informática, en busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida"; `;
-let str2 = ` "I am passionate about computing, looking for new experiences, challenges and practices that help me gain knowledge to incorporate day by day into my life"; `;
+let str = `"Soy un apasionado de la informática, en busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida";`;
+let str2 = `"I am passionate about computing, looking for new experiences, challenges and practices that help me gain knowledge to incorporate day by day into my life";`;
 const cursor = document.getElementById('description')
 let array = str.split('')
 let array2 = str2.split('')
@@ -119,7 +119,6 @@ const menuHeader = document.getElementById('toggleOpen');
 const list =  document.getElementById('navegationMobile')
 
 menuHeader.addEventListener('click',(e)=>{
-    
     if(!list.classList.contains("navegationMobile1")){
         list.classList.add("navegationMobile1")
         list.classList.remove("menuMobile")
