@@ -268,8 +268,6 @@ englishToggle.addEventListener('click', (e)=>{
         
     }
 })
-const label = document.getElementById('labNombre');
-console.log(label.innerHTML)
 
 function cambiaIdioma (id, cadena = ""){
     let nombre = document.getElementById(id);
