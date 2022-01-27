@@ -282,7 +282,11 @@
     .leerMenosContainer{
         display: none;
     }
-    
+    .button-idioma{
+        background-color: transparent;
+        border: none;
+        
+    }
     .leerMenos{
         display: none;
     }
