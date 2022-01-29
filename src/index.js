@@ -127,15 +127,7 @@ setTimeout(()=>{escribir(array)},2000)
 const menuHeader = document.getElementById('toggleOpen');
 const list =  document.getElementById('navegationMobile')
 
-menuHeader.addEventListener('click',(e)=>{
-    if(!list.classList.contains("navegationMobile1")){
-        list.classList.add("navegationMobile1")
-        list.classList.remove("menuMobile")
-     }else{
-         list.classList.add("menuMobile")
-         list.classList.remove("navegationMobile1")
-     }
-})
+
 
 
 
