@@ -212,7 +212,8 @@ englishToggle.addEventListener('click', (e)=>{
             cambiaIdioma("leerMenosCursos",`Read Less <i class="uil uil-arrow-up"></i>` )
             cambiaIdioma("tecnoTitle",`<b class="b2"><</b>Tecnologies<b class="b2">/></b>` )
             cambiaIdioma("descriptTec",`I have knowledge in web layout, user interface development, in current technologies for a frontend developer, such as HTML5, CSS, Bootstrap,`)
-            cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs. <br>I also have knowledge of the backend side with node.js</b>`)
+            cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs(hooks, ReactRouter, Testing with Jest, 
+                state management with Redux). <br>I also have knowledge of the backend side with node.js</b>`)
             cambiaIdioma("readMoreMasT",`Read More <i class="uil uil-arrow-down"></i>`)
             cambiaIdioma("readMenosT",`Read Less <i class="uil uil-arrow-up"></i>`)
             //contactme
@@ -255,9 +256,9 @@ englishToggle.addEventListener('click', (e)=>{
         //tecnologias
         cambiaIdioma("tecnoTitle",`<b class="b2"><</b>Tecnologies<b class="b2">/></b>` )
         cambiaIdioma("descriptTec",`Poseo conocimientos en maquetado web,desarrollo de interfaces de usuario, 
-        en las tecnologías actuales para un desarrollador frontend, tales como HTML5, CSS, Bootstrap,`)
-        cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs. <br>
-        También poseo conocimientos en el lado del backend con node.js y express, ademas de contar con conocimientos en bases de datos relacionales como SQL y no relacionales como Mongo DB<b class="b4">"</b>`)
+        en las tecnologías actuales para un desarrollador frontend, tales como HTML5, CSS, Bootstrap, Sass,`)
+        cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs(hooks, ReactRouter, Testing con Jest, manejo de estado con Redux). <br>
+        También poseo conocimientos en el lado del backend con node.js<b class="b4">"</b>`)
         cambiaIdioma("readMoreMasT",`Leer Mas <i class="uil uil-arrow-down"></i>`)
         cambiaIdioma("readMenosT",`Leer Menos <i class="uil uil-arrow-down"></i>`)
         //contactme
