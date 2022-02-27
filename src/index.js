@@ -114,19 +114,7 @@ const escribir = (arr)=>{
 //evento de escroll para descripcion
 setTimeout(()=>{escribir(array)},2000)
 
-//que se muestre el apartado mobile
-const menuHeader = document.getElementById('toggleOpen');
-const list =  document.getElementById('navegationMobile')
 
-menuHeader.addEventListener('click',(e)=>{
-    if(!list.classList.contains("navegationMobile1")){
-        list.classList.add("navegationMobile1")
-        list.classList.remove("menuMobile")
-     }else{
-         list.classList.add("menuMobile")
-         list.classList.remove("navegationMobile1")
-     }
-})
 
 
 
@@ -269,10 +257,82 @@ englishToggle.addEventListener('click', (e)=>{
     }
 })
 const label = document.getElementById('labNombre');
-console.log(label.innerHTML)
+
 
 function cambiaIdioma (id, cadena = ""){
     let nombre = document.getElementById(id);
     if(cadena.length > 2) return nombre.innerHTML = cadena;
     
 }
+
+
+//slider
+
+
+const proyectos = [
+    {
+        title: "Aqui y Ahota",
+        descrip: "Menu mobile para cafeteria, realizada con react",
+        id: 1,
+        img: 'https://www.calliaweb.co.uk/wp-content/uploads/2015/10/600x400.jpg'
+    },
+    {
+        title: "Aqui y Ahota2",
+        descrip: "Menu mobile para ca12312feteria, realizada con react",
+        id: 2,
+        img: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Sinusv%C3%A5g_400px.png'
+    },
+    {
+        title: "Aqui y Ahota3",
+        descrip: "Menu mobile para ca43434feteria, realizada con react",
+        id: 2,
+        img: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Sinusv%C3%A5g_400px.png'
+    },{
+        title: "Aqui y Ahota4",
+        descrip: "Menu mobile para caf5555555eteria, realizada con react",
+        id: 2,
+        img: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Sinusv%C3%A5g_400px.png'
+    }]
+
+
+    const buttonRigth = document.getElementById('buttonRight'),
+          buttonLeft = document.getElementById('buttonLeft'),
+          titleAplication = document.getElementById('titleAplication'),
+          descriptAplication = document.getElementById('descriptAplication'),
+          sitioHref = document.getElementById('sitioHref'),
+          imgProyect = document.getElementById('imgProyect'),
+          containerProduct = document.getElementById('containerProduct');
+
+let contadorproyect = 0;
+let className = containerProduct.className;
+
+ 
+
+buttonRigth.addEventListener("click", ()=>{
+    containerProduct.className = '';
+    
+    titleAplication.innerHTML = proyectos[contadorproyect].title
+    descriptAplication.innerHTML = proyectos[contadorproyect].descrip
+    imgProyect.src = proyectos[contadorproyect].img 
+    containerProduct.classList = className + 'animate__animated  animate__fadeIn'
+    
+    contadorproyect++;
+    if(contadorproyect === proyectos.length){
+        contadorproyect = 0;
+    }
+    
+})
+buttonLeft.addEventListener("click", ()=>{
+    
+    titleAplication.innerHTML = proyectos[contadorproyect].title
+    descriptAplication.innerHTML = proyectos[contadorproyect].descrip
+    imgProyect.src = proyectos[contadorproyect].img 
+
+    contadorproyect--;
+    if(contadorproyect < 0){
+        contadorproyect = (proyectos.length-1);
+    }
+    
+
+   
+})
