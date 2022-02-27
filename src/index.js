@@ -1,6 +1,6 @@
 
 
-let arrIcons = [
+const arrIcons = [
 './iconosSlider/bootstrap.png',
 './iconosSlider/css-3.png',
 './iconosSlider/git.png', 
@@ -55,8 +55,8 @@ const darkmode= document.getElementById('theme-button'),
       coursesDark = document.getElementById('darkCourses'),
       tecnologies = document.getElementById('tecnoDark'),
       contactme = document.getElementById('formSubmit'),
-
       body = document.getElementById('body')
+
 
 darkmode.addEventListener('click',(e)=>{
  
@@ -87,6 +87,12 @@ darkmode.addEventListener('click',(e)=>{
     
     
 })
+
+
+//asignamos a button la variable del idioma para bloquear el boton
+const buttonI = document.getElementById('idioma')
+
+
 //cursor Description
 let str = `"Soy un apasionado de la informática, en busca de nuevas experiencias, desafíos que me ayuden a obtener conocimientos y practicas para ir incorporando día a día en mi vida";`;
 let str2 = `"I am passionate about computing, looking for new experiences, challenges and practices that help me gain knowledge to incorporate day by day into my life";`;
@@ -96,6 +102,7 @@ let array2 = str2.split('')
 let inicio = cursor.innerHTML;
 let conta = 0;
 const escribir = (arr)=>{
+    buttonI.disabled =  true;
     setTimeout(()=>{
         cursor.innerHTML += arr[conta];
         conta++;    
@@ -103,17 +110,26 @@ const escribir = (arr)=>{
            
          escribir(arr)
             
+        
         }
         else{
             conta = 0;
+            buttonI.disabled =  false;
         }
         
     },50)
 }
 
-//evento de escroll para descripcion
+//dispara la funcion al entra en la pagina
 setTimeout(()=>{escribir(array)},2000)
 
+<<<<<<< HEAD
+=======
+//que se muestre el apartado mobile
+const menuHeader = document.getElementById('toggleOpen');
+const list =  document.getElementById('navegationMobile')
+
+>>>>>>> 3857feccf2a5eeae50a4bb11322c56ef3ebab442
 
 
 
@@ -122,7 +138,7 @@ setTimeout(()=>{escribir(array)},2000)
 const spanDescription =  document.getElementById('readMoreSpan'),
       readMoreD = document.getElementById('readMoreD'),
       readMoreMasD = document.getElementById('readMenosD')
-readMore.addEventListener('click',()=>{
+      readMore.addEventListener('click',()=>{
     leerMas(spanDescription,readMoreD, readMoreMasD)
 
 })
@@ -199,7 +215,8 @@ englishToggle.addEventListener('click', (e)=>{
             cambiaIdioma("leerMenosCursos",`Read Less <i class="uil uil-arrow-up"></i>` )
             cambiaIdioma("tecnoTitle",`<b class="b2"><</b>Tecnologies<b class="b2">/></b>` )
             cambiaIdioma("descriptTec",`I have knowledge in web layout, user interface development, in current technologies for a frontend developer, such as HTML5, CSS, Bootstrap,`)
-            cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs. <br>I also have knowledge on the backend side with node.js and express, in addition to having knowledge of relational databases such as SQL and non-relational databases such as Mongo DB<b class="b4">"</b>`)
+            cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs(hooks, ReactRouter, Testing with Jest, 
+                state management with Redux). <br>I also have knowledge of the backend side with node.js</b>`)
             cambiaIdioma("readMoreMasT",`Read More <i class="uil uil-arrow-down"></i>`)
             cambiaIdioma("readMenosT",`Read Less <i class="uil uil-arrow-up"></i>`)
             //contactme
@@ -242,9 +259,9 @@ englishToggle.addEventListener('click', (e)=>{
         //tecnologias
         cambiaIdioma("tecnoTitle",`<b class="b2"><</b>Tecnologies<b class="b2">/></b>` )
         cambiaIdioma("descriptTec",`Poseo conocimientos en maquetado web,desarrollo de interfaces de usuario, 
-        en las tecnologías actuales para un desarrollador frontend, tales como HTML5, CSS, Bootstrap,`)
-        cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs. <br>
-        También poseo conocimientos en el lado del backend con node.js y express, ademas de contar con conocimientos en bases de datos relacionales como SQL y no relacionales como Mongo DB<b class="b4">"</b>`)
+        en las tecnologías actuales para un desarrollador frontend, tales como HTML5, CSS, Bootstrap, Sass,`)
+        cambiaIdioma("readMoreSpanT",`JavaScript Vanilla y ReactJs(hooks, ReactRouter, Testing con Jest, manejo de estado con Redux). <br>
+        También poseo conocimientos en el lado del backend con node.js<b class="b4">"</b>`)
         cambiaIdioma("readMoreMasT",`Leer Mas <i class="uil uil-arrow-down"></i>`)
         cambiaIdioma("readMenosT",`Leer Menos <i class="uil uil-arrow-down"></i>`)
         //contactme
@@ -256,8 +273,11 @@ englishToggle.addEventListener('click', (e)=>{
         
     }
 })
+<<<<<<< HEAD
 const label = document.getElementById('labNombre');
 
+=======
+>>>>>>> 3857feccf2a5eeae50a4bb11322c56ef3ebab442
 
 function cambiaIdioma (id, cadena = ""){
     let nombre = document.getElementById(id);
@@ -266,6 +286,7 @@ function cambiaIdioma (id, cadena = ""){
 }
 
 
+<<<<<<< HEAD
 //slider
 
 
@@ -336,3 +357,9 @@ buttonLeft.addEventListener("click", ()=>{
 
    
 })
+=======
+
+
+
+
+>>>>>>> 3857feccf2a5eeae50a4bb11322c56ef3ebab442
