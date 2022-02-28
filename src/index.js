@@ -123,13 +123,12 @@ const escribir = (arr)=>{
 //dispara la funcion al entra en la pagina
 setTimeout(()=>{escribir(array)},2000)
 
-<<<<<<< HEAD
-=======
+
 //que se muestre el apartado mobile
 const menuHeader = document.getElementById('toggleOpen');
 const list =  document.getElementById('navegationMobile')
 
->>>>>>> 3857feccf2a5eeae50a4bb11322c56ef3ebab442
+
 
 
 
@@ -273,11 +272,10 @@ englishToggle.addEventListener('click', (e)=>{
         
     }
 })
-<<<<<<< HEAD
+
 const label = document.getElementById('labNombre');
 
-=======
->>>>>>> 3857feccf2a5eeae50a4bb11322c56ef3ebab442
+
 
 function cambiaIdioma (id, cadena = ""){
     let nombre = document.getElementById(id);
@@ -286,20 +284,21 @@ function cambiaIdioma (id, cadena = ""){
 }
 
 
-<<<<<<< HEAD
-//slider
+
+//SLIDER
 
 
 const proyectos = [
     {
-        title: "Aqui y Ahota",
-        descrip: "Menu mobile para cafeteria, realizada con react",
+        title: "Aqui y Ahora",
+        descrip: "Menu mobile para cafeteria, realizada con react, Sass",
         id: 1,
-        img: 'https://www.calliaweb.co.uk/wp-content/uploads/2015/10/600x400.jpg'
+        img: 'https://www.calliaweb.co.uk/wp-content/uploads/2015/10/600x400.jpg',
+        href: 'https://www.youtube.com/'
     },
     {
-        title: "Aqui y Ahota2",
-        descrip: "Menu mobile para ca12312feteria, realizada con react",
+        title: "Remember Notes",
+        descrip: "Aplicacion de notas de calendario, Realizada en el stack MERN(Mongo, Express, React.js y Node.js)",
         id: 2,
         img: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Sinusv%C3%A5g_400px.png'
     },
@@ -307,12 +306,12 @@ const proyectos = [
         title: "Aqui y Ahota3",
         descrip: "Menu mobile para ca43434feteria, realizada con react",
         id: 2,
-        img: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Sinusv%C3%A5g_400px.png'
+        img: 'https://theke.info/wp-content/uploads/2020/05/coding-1024x950.png'
     },{
         title: "Aqui y Ahota4",
         descrip: "Menu mobile para caf5555555eteria, realizada con react",
         id: 2,
-        img: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Sinusv%C3%A5g_400px.png'
+        img: 'https://www.cronista.com/files/image/443/443922/61f5f6b576771_950_534!.jpg?s=814aa66e91fa887a2026646c295eed0b&d=1644012100'
     }]
 
 
@@ -325,30 +324,31 @@ const proyectos = [
           containerProduct = document.getElementById('containerProduct');
 
 let contadorproyect = 0;
-let className = containerProduct.className;
+
 
  
 
 buttonRigth.addEventListener("click", ()=>{
-    containerProduct.className = '';
+    
     
     titleAplication.innerHTML = proyectos[contadorproyect].title
     descriptAplication.innerHTML = proyectos[contadorproyect].descrip
     imgProyect.src = proyectos[contadorproyect].img 
-    containerProduct.classList = className + 'animate__animated  animate__fadeIn'
-    
+    sitioHref.href = proyectos[contadorproyect].href
+
     contadorproyect++;
-    if(contadorproyect === proyectos.length){
+    if(contadorproyect === proyectos.length ){
         contadorproyect = 0;
     }
-    
 })
+
+
 buttonLeft.addEventListener("click", ()=>{
     
     titleAplication.innerHTML = proyectos[contadorproyect].title
     descriptAplication.innerHTML = proyectos[contadorproyect].descrip
     imgProyect.src = proyectos[contadorproyect].img 
-
+    sitioHref.href = proyectos[contadorproyect].href
     contadorproyect--;
     if(contadorproyect < 0){
         contadorproyect = (proyectos.length-1);
@@ -357,9 +357,4 @@ buttonLeft.addEventListener("click", ()=>{
 
    
 })
-=======
 
-
-
-
->>>>>>> 3857feccf2a5eeae50a4bb11322c56ef3ebab442
