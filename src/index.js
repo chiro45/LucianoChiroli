@@ -295,7 +295,7 @@ const proyectos = [
         id: 1,
         img: 'https://www.calliaweb.co.uk/wp-content/uploads/2015/10/600x400.jpg',
         href: 'https://www.youtube.com/'
-    },
+    },//comentary
     {
         title: "Remember Notes",
         descrip: "Aplicacion de notas de calendario, Realizada en el stack MERN(Mongo, Express, React.js y Node.js)",
