@@ -291,28 +291,12 @@ function cambiaIdioma (id, cadena = ""){
 const proyectos = [
     {
         title: "Aqui y Ahora",
-        descrip: "Menu mobile para cafeteria, realizada con react, Sass",
+        descrip: "Aplicacion de menu para cafeteria",
         id: 1,
-        img: 'https://www.calliaweb.co.uk/wp-content/uploads/2015/10/600x400.jpg',
-        href: 'https://www.youtube.com/'
-    },//comentary
-    {
-        title: "Remember Notes",
-        descrip: "Aplicacion de notas de calendario, Realizada en el stack MERN(Mongo, Express, React.js y Node.js)",
-        id: 2,
-        img: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Sinusv%C3%A5g_400px.png'
-    },
-    {
-        title: "Aqui y Ahota3",
-        descrip: "Menu mobile para ca43434feteria, realizada con react",
-        id: 2,
-        img: 'https://theke.info/wp-content/uploads/2020/05/coding-1024x950.png'
-    },{
-        title: "Aqui y Ahota4",
-        descrip: "Menu mobile para caf5555555eteria, realizada con react",
-        id: 2,
-        img: 'https://www.cronista.com/files/image/443/443922/61f5f6b576771_950_534!.jpg?s=814aa66e91fa887a2026646c295eed0b&d=1644012100'
-    }]
+        img: './iconosSlider/AquiYahoraPagina.jpg',
+        href: 'https://aquiyahoramenu.web.app/menuAqui-ahora/section'
+    }
+]
 
 
     const buttonRigth = document.getElementById('buttonRight'),
